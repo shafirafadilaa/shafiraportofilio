@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shafira | About Me</title>
+  <style>
+    *    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #0b0c1a;
+      color: white;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background-color: #0f1129;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      color: #00c8ff;
+      font-weight: bold;
+      text-transform: lowercase;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+      padding: 5px 10px; /* Padding untuk memberikan ruang */
+      border-radius: 5px; /* Sudut membulat */
+      transition: background-color 0.3s ease; /* Transisi halus */
+    }
+
+    .nav-links li a.active,
+    .nav-links li a:hover {
+      color: #00c8ff;
+      background-color: white; /* Background putih saat aktif atau hover */
+      border-radius: 5px; /* Sudut membulat */
+    }
+
+    .about-section {
+      padding: 80px 10%;
+      display: flex;
+      flex-direction: row; /* Mengubah arah flex menjadi baris */
+      align-items: center; /* Menyelaraskan item di tengah secara vertikal */
+      text-align: left; /* Mengubah teks menjadi rata kiri */
+    }
+
+    .about-text {
+      flex: 1; /* Membuat teks mengambil ruang yang tersedia */
+      margin-right: 40px; /* Memberikan jarak antara teks dan gambar */
+    }
+
+    .about-text h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .about-text h2 span {
+      color: #00c8ff;
+    }
+
+    .about-text h3 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: white;
+    }
+
+    .about-text p {
+      line-height: 1.6;
+      font-size: 1em;
+      color: #ccc;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .about-img {
+      flex: 1; /* Membuat gambar mengambil ruang yang tersedia */
+      display: flex;
+      justify-content: center; /* Menyelaraskan gambar di tengah secara horizontal */
+    }
+
+    .about-img img {
+      width: 400px; /* Mengubah ukuran gambar menjadi lebih besar */
+      height: 400px; /* Mengubah ukuran gambar menjadi lebih besar */
+      object-fit: cover;
+      border-radius: 50%;
+      animation: neonGlow 4s infinite ease-in-out;
+    }
+
+    @keyframes neonGlow {
+      0% {
+        box-shadow: 0 0 40px #00c8ff, 0 0 80px #00c8ff, 0 0 120px #00c8ff;
+      }
+      33% {
+        box-shadow: 0 0 40px #ff00ff, 0 0 80px #ff00ff, 0 0 120px #ff00ff;
+      }
+      66% {
+        box-shadow: 0 0 40px #8a2be2, 0 0 80px #8a2be2, 0 0 120px #8a2be2;
+      }
+      100% {
+        box-shadow: 0 0 40px #00c8ff, 0 0 80px #00c8ff, 0 0 120px #00c8ff;
+      }
+
+
+    }
+      /* Footer style */
+    footer {
+      background-color: #0f1129;
+      padding: 20px 10%;
+      text-align: center;
+    }
+
+    footer p {
+      margin-bottom: 15px;
+      font-size: 1.2em;
+      color: #00c8ff;
+      font-weight: 600;
+    }
+
+    .social-icons {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .social-icons li a {
+      color: #00c8ff;
+      font-size: 20px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .social-icons li a:hover,
+    .social-icons li a:focus {
+      color: #66d9ff;
+      outline: none;
+    }
+
+    /* Simple line SVG icons for Instagram and YouTube */
+    .icon {
+      width: 28px;
+      height: 30px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">shafira</div>
+      <ul class="nav-links">
+        <li><a href="intro.html">Introduction</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skill.html" class="active">Skill</a></li>
+        <li><a href="ser.html">Sertifikat</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <div class="about-text">
+      <h2>It's me <span>Shafira fadila anggria rianto</span></h2>
+      <h3>Skill</h3>
+        <strong>Debian</strong><br>
+        • Memahami dasar-dasar sistem operasi Linux, perintah dasar, serta konfigurasi layanan jaringan seperti SSH, DNS, dan Web Server (Apache).<br>
+        • Mampu menggunakan platform seperti WordPress, Moodle, dan database untuk kebutuhan pengelolaan konten dan pembelajaran.<br><br>
+
+        <strong>Pemrograman</strong><br>
+        • Menguasai dasar-dasar HTML, CSS, dan JavaScript untuk pembuatan dan pengembangan halaman website sederhana.<br>
+        • Mampu membuat tampilan halaman website menggunakan Figma sesuai prinsip desain dasar yang rapi dan fungsional.<br><br>
+
+        <strong>Network</strong><br>
+        • Crimping kabel<br>
+        • Seplicing FO
+      </p>
+    </div>
+    <div class="about-img">
+      <img src="foto/WhatsApp Image 2025-06-01 at 15.49.13_d95457bf.jpg" alt="Foto Ra" />
+    </div>
+  </section>
+    <footer>
+    <p>Ikuti sosial media saya:</p>
+    <ul class="social-icons">
+      <li>
+        <a href="https://www.instagram.com/shaffiraa71?igsh=MWt1Ynp5amNjZ29mcg%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="3.5"/>
+            <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/>
+          </svg>
+          <span style="color: #00c8ff;">shafira</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/@safirafadilaanggitarianto8444" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <rect x="2" y="7" width="20" height="10" rx="4" ry="4"/>
+            <polygon points="10 9 15 12 10 15 10 9"/>
+          </svg>
+          <span style="color: #00c8ff;">Shafirafadila</span>
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+</body>
+</html>
